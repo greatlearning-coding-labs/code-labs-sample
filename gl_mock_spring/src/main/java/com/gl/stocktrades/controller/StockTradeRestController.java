@@ -37,7 +37,7 @@ public class StockTradeRestController {
     StockTrade createdTrade = null;
     String[] typeArr = {"buy", "sell"};
     if(Arrays.asList(typeArr).contains(stockTrade.getType()) && stockTrade.getShares() > 0 && stockTrade.getShares() <= 100){
-      createdTrade = stockTradeService.addNewStockTrade(stockTrade);
+      // createdTrade = stockTradeService.addNewStockTrade(stockTrade);
       return ResponseEntity.status(201).body(createdTrade);
     }else {
       return ResponseEntity.badRequest().build();
