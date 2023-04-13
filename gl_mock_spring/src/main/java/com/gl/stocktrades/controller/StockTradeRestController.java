@@ -23,6 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/trades")
 public class StockTradeRestController {
+  
 
   @Autowired
   StockTradeService stockTradeService;
